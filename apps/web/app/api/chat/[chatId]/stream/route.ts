@@ -8,6 +8,9 @@ import type { WebAgentUIMessage } from "@/app/types";
 import { updateChatActiveStreamId } from "@/lib/db/sessions";
 import { createCancelableReadableStream } from "@/lib/chat/create-cancelable-readable-stream";
 
+export const maxDuration = 300;
+export const runtime = "nodejs";
+
 type RouteContext = {
   params: Promise<{ chatId: string }>;
 };
