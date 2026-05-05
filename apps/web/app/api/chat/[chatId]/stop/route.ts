@@ -10,6 +10,9 @@ import {
   updateChatAssistantActivity,
 } from "@/lib/db/sessions";
 
+export const maxDuration = 300;
+export const runtime = "nodejs";
+
 type RouteContext = {
   params: Promise<{ chatId: string }>;
 };
